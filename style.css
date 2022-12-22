@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: dodgerblue;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: rgb(252, 233, 233);
+    width: 50vw;
+    min-width: 21rem;
+    padding: 3rem 2.5rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.search-section{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1rem;
+}
+
+#input-text{
+    border: none;
+    border-bottom: 2px solid dodgerblue;
+    background-color: rgb(252, 233, 233);
+    font-size: 1em;
+    padding: 0 .5rem;
+    outline: none;
+}
+
+#search{
+    font-size: 1rem;
+    background-color: dodgerblue;
+    color: #fff;
+    border: none;
+    padding: .5rem 1.2rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+#search:hover{
+    font-weight: bold;
+}
+
+.result{
+    margin-bottom: 1rem;
+}
+
+.result .flag{
+    display: block;
+    width: 10rem;
+    margin: 1.5rem auto 0 auto;
+}
+
+.result h1{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.data{
+    margin-bottom: .2rem;
+}
+
+h4{
+    display: inline;
+}
+
+span{
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+}
+
+h3{
+    margin-top: 1rem;
+    color: rgba(255, 0, 0, 0.6);
+    font-weight: 400;
+    text-align: center;
+}
+
+/* .more-data{
+    display: none;
+} */
+
+#more-info{
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    padding: 3px 10px;
+    background-color: rgb(252, 233, 233);
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+#more-info:hover{
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+.inactive{
+    display: none;
+}
+
+@media (max-width:890px) {
+    .search-section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:700px) {
+    .container{
+        padding: 2.5rem 2rem;
+    }
+}
+
+@media (max-width:380px) {
+    .container{
+        min-width: 16rem;
+        padding: 2rem 1.75rem;
+    }
+
+    #input-text{
+        font-size: .8rem;
+    }
+
+    #search{
+        font-size: .8rem;
+    }
+}
